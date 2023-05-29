@@ -1,0 +1,52 @@
+.leetsingle {
+    background-color: var(--main-text-color);
+    flex:4 1 80%;
+    color: var(--color-primary-leet);
+    text-align: left;
+    padding: 10px;
+}
+.solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.solutionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.card {
+    border: var(--main-text-color) 1px solid ;
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 4px;
+    height: 8rem;
+    overflow: auto;
+    padding-top: 5px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.description {
+    text-align: left;
+    padding: 0 10px 5px 10px;
+}
+.lname {
+    font-weight: bold;
+    font-size: 130%;
+}
+.card a {
+    text-decoration: none;
+    color: var(--color-primary-400);
+  }
+  
+  .card a:hover,
+  .card a.active {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+  }

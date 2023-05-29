@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getData } from './api';
-import RenderRouter from './router';
+import { router } from './router';
 
 function App() {
   const [data, setData] = useState({});
@@ -15,7 +15,7 @@ function App() {
   }, []);
   return (
     <div>
-      <RenderRouter />
+      <RouterProvider router={router} />
     </div>
   );
 }

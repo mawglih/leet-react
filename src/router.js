@@ -1,22 +1,19 @@
-import { Routes, Route } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from './components/Home';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import LeetPage from "./components/Leets/LeetPage";
-const RenderRouter = () => {
-    return (
-        <>
-            <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} >
-                        <Route path="/LeetPage" element={<LeetPage />}/>
-                    </Route>
-                </Routes>
-            <Footer />
-        </>
-    )
+import Layout from "./MainNavigation/Layout";
+import ErrorPage from "./components/ErrorPage";
+import Leet from "./components/Leets/SingleLeet";
 
-    
-}
-
-export default RenderRouter;
+export const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout/>,
+        errorElement: <ErrorPage/>,
+        children: [
+            { path: '/', element: <Home /> },
+            { path: '/leetpage', element: <LeetPage /> },
+            { path: '/leetpage/:id', element: <Leet/> },
+        ],
+    },
+]);

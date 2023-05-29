@@ -1,9 +1,10 @@
-import LeetPage from "./Leets/LeetPage";
+import LeetCards from "./Leets/LeetCards";
 
 const Home = () => {
     return (
         <div>
-            <LeetPage />
+            <h1>Welcome to Home Page</h1>
+            <LeetCards />
         </div>
     )
 }
