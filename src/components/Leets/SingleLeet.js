@@ -3,6 +3,7 @@ import {code as sample} from './sample.code';
 import classes from './LeetPage.module.css';
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Sidebar from "./Sidebar";
 
 const Leet = () => {
     const params = useParams();
@@ -15,7 +16,8 @@ const Leet = () => {
         setLeet(sample[newId]);
     },[id]);
     return (
-        <div className={classes.leetsingle}>
+            <div className={classes.leetsingle}>
+            
             {leet &&
             (<>
                 <h2>{leet.lname}</h2>
@@ -39,6 +41,7 @@ const Leet = () => {
             )}
             
         </div>
+        
     )
 }
 

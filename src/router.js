@@ -4,6 +4,7 @@ import LeetPage from "./components/Leets/LeetPage";
 import Layout from "./MainNavigation/Layout";
 import ErrorPage from "./components/ErrorPage";
 import Leet from "./components/Leets/SingleLeet";
+import LeetLayout from './components/Leets/LeetLayout';
 
 export const router = createBrowserRouter([
     {
@@ -13,7 +14,13 @@ export const router = createBrowserRouter([
         children: [
             { path: '/', element: <Home /> },
             { path: '/leetpage', element: <LeetPage /> },
-            { path: '/leetpage/:id', element: <Leet/> },
+            { 
+                path: '/leetpage/:id', 
+                element: <LeetLayout/>,
+                children: [
+                    { path: '/leetpage/:id', element: <Leet /> }
+                ]
+            },
         ],
     },
 ]);

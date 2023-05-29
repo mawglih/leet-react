@@ -1,9 +1,10 @@
 .leetsingle {
     background-color: var(--main-text-color);
-    flex:4 1 80%;
     color: var(--color-primary-leet);
     text-align: left;
     padding: 10px;
+    flex-basis: auto;
+    flex-grow: 1;
 }
 .solution {
     display: flex;
@@ -47,6 +48,54 @@
   
   .card a:hover,
   .card a.active {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+  }
+  .leet-page-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .sidebar {
+    background-color: var(--main-text-color);
+    flex-basis: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    display: inline;
+    
+
+}
+.sidebar-internal {
+    align-self: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* width: 70%; */
+}
+.sidebar li {
+    text-align: center;
+    
+    margin-bottom: 10px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: var(--color-primary-leet);
+}
+  
+  .sidebar a:hover,
+  .sidebar a.active {
     color: var(--color-primary-800);
     text-decoration: underline;
   }

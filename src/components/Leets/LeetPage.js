@@ -1,13 +1,14 @@
+import LeetCards from "./LeetCards";
 import Sidebar from "./Sidebar";
-import Leet from "./SingleLeet";
+import classes from './LeetPage.module.css';
 
 const LeetPage = () => {
     return (
         <div>
 
-            <div className="leet-page-cont">
+            <div className={classes['leet-page-cont']}>
                 <Sidebar/>
-                <Leet/>
+                <LeetCards />
             </div>
             
         </div> 

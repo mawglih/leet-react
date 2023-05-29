@@ -20,19 +20,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.leet-page-cont {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-flow: wrap row;
-  gap: 10px;
-}
-.leet-single, .sidebar {
-  
-}
-
-.sidebar {
-  background-color: green;
-  flex-basis: 10%;
-}
-
