@@ -12,13 +12,13 @@ export const router = createBrowserRouter([
         element: <Layout/>,
         errorElement: <ErrorPage/>,
         children: [
-            { path: '/', element: <Home /> },
-            { path: '/leetpage', element: <LeetPage /> },
+            { index: true, path: '', element: <Home /> },
+            { path: 'leetpage', element: <LeetPage /> },
             { 
                 path: '/leetpage/:id', 
                 element: <LeetLayout/>,
                 children: [
-                    { path: '/leetpage/:id', element: <Leet /> }
+                    { index: true, path: '', element: <Leet /> }
                 ]
             },
         ],
