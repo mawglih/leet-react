@@ -99,3 +99,23 @@
     color: var(--color-primary-800);
     text-decoration: underline;
   }
+
+  .search-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-cont > div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-cont > div >label {
+    padding-left: 10px;
+    margin-left: 20px;
+  }
+  .input-search {
+    margin-right: 20px;
+  }

@@ -16,10 +16,18 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/leetpage'
+                            to='leet1'
                             className={({ isActive }) => isActive ? classes.active : undefined}
                         >
-                            LeetPage
+                            Leets 1-50
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='leet2'
+                            className={({ isActive }) => isActive ? classes.active : undefined}
+                        >
+                            Leets 51-100
                         </NavLink>
                     </li>
                 </ul>

@@ -1,6 +1,6 @@
 export const code =  {
-    LC1: 
-        {   lname: '1. Two Sum',
+    LC51: 
+        {   lname: '51. Two Sum',
             description: 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.',
             algo: 'The simplest way is to use 2 for loops but it will give you O(n^2). There is more elegant way to solve it with O(n) using Map (or object). The idea is that we enter for loop and check what number needed if we deduct the current number from target. The map contains previous numbers and their indices: NUMBER => INDEX. The simple check in the map - if number (key) is present, then value is the index of the second number in the result. First index is the current index of number in the for loop. Of course if number (key) is not present, then we add it to map.',
             solution:
@@ -22,8 +22,8 @@ export const code =  {
             memory: 43.7,
             keywords: 'Target Sum, 2Sum, hashmap',
         },
-    LC2: {
-        lname: '2. Add Two Numbers',
+    LC52: {
+        lname: '52. Add Two Numbers',
         description:'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.<br> You may assume the two numbers do not contain any leading zero, except the number 0 itself.',
         algo: '',
         solution: ` /* @param {ListNode} l1
@@ -56,7 +56,7 @@ export const code =  {
         memory: 49.7,
         keywords: 'linked list, list to array, array to list',
     },
-    LC3: {
+    LC53: {
         lname: '3. Longest Substring Without Repeating Characters',
         description:'Given a string s, find the length of the longest substring without repeating characters.',
         algo: '',
@@ -85,7 +85,7 @@ export const code =  {
         memory: 45.2,
         keywords: 'strings, longest substrung, map, length of string',
     },
-    LC4: {
+    LC54: {
         lname: '4. Median of Two Sorted Arrays',
         description:'Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. <br>The overall run time complexity should be O(log (m+n)).',
         algo: '',
@@ -142,7 +142,7 @@ export const code =  {
         memory: 47.1,
         keywords: '2 pointers, median of array',
     },
-    LC5: {
+    LC55: {
         lname: '5. Longest Palindromic Substring',
         description:'Given a string s, return the longest palindromic substring in s.',
         algo: '',
@@ -187,7 +187,7 @@ export const code =  {
         memory: 0,
         keywords: 'palindrome, strings, substring, longest substring',
     },
-    LC6: {
+    LC56: {
         lname: '6. Zigzag Conversion',
         description:'The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility). And then read line by line: "PAHNAPLSIIGYIR". Write the code that will take a string and make this conversion given a number of rows: `string convert(string s, int numRows);`',
         algo: '',
@@ -231,7 +231,7 @@ export const code =  {
         memory: 49.5,
         keywords: 'strings, zigzag, arrays',
     },
-    LC7: {
+    LC57: {
         lname: '7. Reverse Integer',
         description:'Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0. <br>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).',
         algo: '',
@@ -255,9 +255,9 @@ export const code =  {
         memory: 45,
         keywords: 'integer, reverse number, strings',
     },
-    LC8: {
+    LC58: {
         lname: '8. String to Integer (atoi)',
-        description:'Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C\/C++\'s atoi function). <br>The algorithm for myAtoi(string s) is as follows:<br> Read in and ignore any leading whitespace. Check if the next character (if not already at the end of the string) is "-" or "+". Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present. Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored. <br>Convert these digits into an integer (i.e. "123" -> 123, "0032" -> 32). If no digits were read, then the integer is 0. Change the sign as necessary (from step 2). If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then clamp the integer so that it remains in the range. Specifically, integers less than -231 should be clamped to -231, and integers greater than 231 - 1 should be clamped to 231 - 1. Return the integer as the final result. <br>Note:<br> Only the space character \' \' is considered a whitespace character. Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.',
+        description:'Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++\'s atoi function). <br>The algorithm for myAtoi(string s) is as follows:<br> Read in and ignore any leading whitespace. Check if the next character (if not already at the end of the string) is '-' or '+'. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present. Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored. <br>Convert these digits into an integer (i.e. "123" -> 123, "0032" -> 32). If no digits were read, then the integer is 0. Change the sign as necessary (from step 2). If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then clamp the integer so that it remains in the range. Specifically, integers less than -231 should be clamped to -231, and integers greater than 231 - 1 should be clamped to 231 - 1. Return the integer as the final result. <br>Note:<br> Only the space character \' \' is considered a whitespace character. Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.',
         algo: '',
         solution: `/**
         * @param {string}
@@ -301,7 +301,7 @@ export const code =  {
         memory: 0,
         keywords: 'atoi, string to integer',
     },
-    LC9: {
+    LC59: {
         lname: '9. Palindrome Number',
         description:'Given an integer x, return true if x is a palindrome, and false otherwise.',
         algo: '',
@@ -323,7 +323,7 @@ export const code =  {
         memory: 0,
         keywords: 'palindrome, number',
     },
-    LC10: {
+    LC60: {
         lname: '10. Regular Expression Matching',
         description:`Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
         '.' Matches any single character.​​​​
@@ -346,7 +346,7 @@ export const code =  {
         memory: 49.2,
         keywords: 'regex, match regex',
     },
-    LC11: {
+    LC61: {
         lname: '11. Container With Most Water',
         description: `You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
 
@@ -381,7 +381,7 @@ export const code =  {
         memory: 50.1,
         keywords: 'container, max water, pointers',
     },
-    LC12: {
+    LC62: {
         lname: '12. Integer to Roman',
         description:
         `Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -428,7 +428,7 @@ export const code =  {
         memory: 47.1,
         keywords: 'Roman, convert to roman, recursive, strings',
     },
-    LC13: {
+    LC63: {
         lname: '13. Roman to Integer',
         description:
         `Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -482,7 +482,7 @@ export const code =  {
         memory: 47.1,
         keywords: 'roman to integer, hashmap',
     },
-    LC14: {
+    LC64: {
         lname: '14. Longest Common Prefix',
         description:
         `Write a function to find the longest common prefix string amongst an array of strings.
@@ -511,7 +511,7 @@ export const code =  {
         memory: 42.5,
         keywords: 'strings, substrings, common substring',
     },
-    LC15: {
+    LC65: {
         lname: '15. 3Sum',
         description:
         `Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
@@ -557,7 +557,7 @@ export const code =  {
         memory: 83.1,
         keywords: '3sum, pointers',
     },
-    LC16: {
+    LC66: {
         lname: '16. 3Sum Closest',
         description:
         `Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
@@ -601,7 +601,7 @@ export const code =  {
         memory: 43.8,
         keywords: '3sum, pointers',
     },
-    LC17: {
+    LC67: {
         lname: '17. Letter Combinations of a Phone Number',
         description:
         `Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
@@ -637,7 +637,7 @@ export const code =  {
         memory: 41.8,
         keywords: 'phone numbers, hashmap, arrays',
     },
-    LC18: {
+    LC68: {
         lname: '18. 4Sum',
         description:
         `Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
@@ -687,7 +687,7 @@ export const code =  {
         memory: 44.4,
         keywords: '4sum, pointers',
     },
-    LC19: {
+    LC69: {
         lname: '19. Remove Nth Node From End of List',
         description:
         `Given the head of a linked list, remove the nth node from the end of the list and return its head.`,
@@ -728,7 +728,7 @@ export const code =  {
         memory: 43.5,
         keywords: 'listnode, node operation, nth node',
     },
-    LC20: {
+    LC70: {
         lname: '20. Valid Parentheses',
         description:
         `Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
@@ -784,7 +784,7 @@ export const code =  {
         memory: 0,
         keywords: 'parenthesis, strings, stack',
     },
-    LC21: {
+    LC71: {
         lname: '21. Merge Two Sorted Lists',
         description:
         `You are given the heads of two sorted linked lists list1 and list2. Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.       
@@ -817,7 +817,7 @@ export const code =  {
         memory: 43.8,
         keywords: 'ListNode, merge lists, sorted lists',
     },
-    LC22: {
+    LC72: {
         lname: '22. Generate Parenthesis',
         description:
         `Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.`,
@@ -846,7 +846,7 @@ export const code =  {
         memory: 43.9,
         keywords: 'backtracking, recursion, create parenthesis, dfs traversal',
     },
-    LC23: {
+    LC73: {
         lname: '23. Merge k Sorted Lists',
         description:
         `You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.`,
@@ -886,7 +886,7 @@ export const code =  {
         memory: 48.8,
         keywords: 'ListNode, merge lists, mergw multiple lists, recursion',
     },
-    LC24: {
+    LC74: {
         lname: '24. Swap Nodes in Pairs',
         description:
         `Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)`,
@@ -922,7 +922,7 @@ export const code =  {
         memory: 42.2,
         keywords: 'ListNode, swap two lists',
     },
-    LC25: {
+    LC75: {
         lname: 'Reverse Nodes in k-Group',
         description:
         `Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list. k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is. You may not alter the values in the list's nodes, only nodes themselves may be changed.`,
@@ -965,7 +965,7 @@ export const code =  {
         memory: 46.5,
         keywords: 'linked list, ListNode, stack, reverse linked list',
     },
-    LC26: {
+    LC76: {
         lname: '26. Remove Duplicates from Sorted Array',
         description:
         `Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums. Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:        
@@ -991,7 +991,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC27: {
+    LC77: {
         lname: '',
         description:
         ``,
@@ -1002,7 +1002,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC28: {
+    LC78: {
         lname: '',
         description:
         ``,
@@ -1013,7 +1013,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC29: {
+    LC79: {
         lname: '',
         description:
         ``,
@@ -1024,7 +1024,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC30: {
+    LC80: {
         lname: '',
         description:
         ``,
@@ -1035,7 +1035,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC31: {
+    LC81: {
         lname: '',
         description:
         ``,
@@ -1046,7 +1046,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC32: {
+    LC82: {
         lname: '',
         description:
         ``,
@@ -1057,7 +1057,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC33: {
+    LC83: {
         lname: '',
         description:
         ``,
@@ -1068,7 +1068,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC34: {
+    LC84: {
         lname: '',
         description:
         ``,
@@ -1079,7 +1079,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC35: {
+    LC85: {
         lname: '',
         description:
         ``,
@@ -1090,7 +1090,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC36: {
+    LC86: {
         lname: '',
         description:
         ``,
@@ -1101,7 +1101,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC37: {
+    LC87: {
         lname: '',
         description:
         ``,
@@ -1112,7 +1112,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC38: {
+    LC88: {
         lname: '',
         description:
         ``,
@@ -1123,7 +1123,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC39: {
+    LC89: {
         lname: '',
         description:
         ``,
@@ -1134,7 +1134,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC40: {
+    LC90: {
         lname: '',
         description:
         ``,
@@ -1145,7 +1145,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC41: {
+    LC91: {
         lname: '',
         description:
         ``,
@@ -1156,7 +1156,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC42: {
+    LC92: {
         lname: '',
         description:
         ``,
@@ -1167,7 +1167,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC43: {
+    LC93: {
         lname: '',
         description:
         ``,
@@ -1178,7 +1178,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC44: {
+    LC94: {
         lname: '',
         description:
         ``,
@@ -1189,7 +1189,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC45: {
+    LC95: {
         lname: '',
         description:
         ``,
@@ -1200,7 +1200,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC46: {
+    LC96: {
         lname: '',
         description:
         ``,
@@ -1211,7 +1211,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC47: {
+    LC97: {
         lname: '',
         description:
         ``,
@@ -1222,7 +1222,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC48: {
+    LC98: {
         lname: '',
         description:
         ``,
@@ -1233,7 +1233,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC49: {
+    LC99: {
         lname: '',
         description:
         ``,
@@ -1244,7 +1244,7 @@ export const code =  {
         memory: 0,
         keywords: '',
     },
-    LC50: {
+    LC100: {
         lname: '',
         description:
         ``,

@@ -9,7 +9,10 @@ const Footer = () => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to='/leetpage'>LeetPage</Link>
+                        <Link to='/leet1'>Leet 1-50</Link>
+                    </li>
+                    <li>
+                        <Link to='/leet2'>Leet 51-100</Link>
                     </li>
                 </ul>
             </nav>
